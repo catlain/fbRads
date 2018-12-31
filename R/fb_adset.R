@@ -107,6 +107,7 @@ fbad_create_adset <- function(fbacc,
 
     ## transform lists to JSON
     params$targeting <- toJSON(targeting, auto_unbox = TRUE)
+    params$promoted_object <- toJSON(promoted_object, auto_unbox = TRUE)
 
     ## get results
     res <- fbad_request(fbacc,
